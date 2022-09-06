@@ -1,0 +1,16 @@
+. dsmeta-red-btn {
+    altura: 45px;
+    _ largura: 45px;
+    _ fundo: rgba (255, 107, 114, 0, 1);
+    borda: 1 px sólido # ff6b72;
+    raio da borda: 10 px;
+    exibição: flexível;
+    align-items: centro;
+    justificar-conteúdo: centro;
+    cursor: ponteiro;
+}
+
+. dsmeta-red-btn img {
+    largura: 19px;
+    _
+}
