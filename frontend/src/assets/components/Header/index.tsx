@@ -1,10 +1,10 @@
-import logo from '../../assets/img/logo.svg'
+import logo from '../../assets/img/logo.svg';
 
-import './styles.css'
+import './styles.css';
 
 function Header() {
     return (
-        < cabeçalho >
+        <header>
             < div className=" dsmeta-logo-container " >
                 < img src={logo} alt=" DSMeta " />
                 < h1 > DSMeta </ ​​h1 >
@@ -13,8 +13,8 @@ function Header() {
                     < a href=" https://www.instagram.com/devsuperior.ig " > @devsuperior.ig </ a >
                 </ p >
             </ div >
-        </ cabeçalho >
+        </header>
     )
 }
 
-export default Header
+export default Header;
