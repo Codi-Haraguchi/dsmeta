@@ -1,20 +1,7 @@
-import Header from "./assets/components/Header";
-import SalesCard from "./assets/components/SalesCard";
-
 function App() {
-  return (
-    <>
-      <Header />
-      <main>
-        <section id="sales">
-          <div className="dsmeta-container">
-            <SalesCard />
-
-          </div>
-        </section>
-      </main>
-    </>
+  return(
+    <h1>"Olá mundo!"</h1>
   )
 }
 
-export default App;
+export default App
