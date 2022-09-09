@@ -1,16 +1,15 @@
-. dsmeta-red-btn {
-    altura: 45px;
-    _ largura: 45px;
-    _ fundo: rgba (255, 107, 114, 0, 1);
-    borda: 1 px sólido # ff6b72;
-    raio da borda: 10 px;
-    exibição: flexível;
-    align-items: centro;
-    justificar-conteúdo: centro;
-    cursor: ponteiro;
+.dsmeta-red-btn {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #ff6b72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-. dsmeta-red-btn img {
-    largura: 19px;
-    _
+.dsmeta-red-btn img {
+    width: 19px;
 }
