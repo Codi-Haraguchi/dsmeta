@@ -14,7 +14,7 @@ public class SaleService {
 	@Autowired
 	private SaleRepository repository;
 	
-	public List<Sale> findSlaes() {
+	public List<Sale> findSales() {
 		return repository.findAll();
 	}
 

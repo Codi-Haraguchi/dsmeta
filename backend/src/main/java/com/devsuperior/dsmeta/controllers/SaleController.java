@@ -19,7 +19,7 @@ public class SaleController {
 	
 	@GetMapping
 	public List<Sale> findSales() {
-		return service.findSlaes();
+		return service.findSales();
 	}
 
 }
