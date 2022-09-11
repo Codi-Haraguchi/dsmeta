@@ -2,26 +2,32 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { BASE_URL } from "../../../utils/request";
-import NotificationButton from '../NotificationButton';
+import { BASE_URL } from "../../utils/request";
+import NotificationButton from '../../components/NotificationButton';
 import './styles.css';
 
 function SalesCard() {
 
     const min = new Date(new Date().setDate(new Date().getDate() - 365));
     const max = new Date();
+
     const [minDate, setMinDate] = useState(min);
     const [maxDate, setMaxDate] = useState(max);
 
     const [sales, setSales] = useState<Sale[]>();
 
     useEffect(() => {
-        axios.get('${BASE_URL}/sales')
+
+        const dmin = minDate.toISOString().slice(0, 10);
+        const dmax = maxDate.toISOString().slice(0, 10);
+
+        console.log(dmin);
+
+        axios.get('${BASE_URL}/sales?minDate=${dmin}$maxDate=${dmax}')
             .then(response => {
                 setSales(response.data.content);
-
             });
-    })
+    }, [minDate, maxDate]);
 
     return (
         <div className="dsmeta-card">
